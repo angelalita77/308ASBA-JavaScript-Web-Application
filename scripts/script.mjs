@@ -26,6 +26,8 @@ async function fetchQuote() {
         }
         const data = await response.json();
         p.innerHTML = data[0].quote;
+        speaker.innerHTML = "-" + data[0].character;
+        show.innerHTML = data[0].show;
         console.log(`Data received:`, data[0].quote)
         
         
