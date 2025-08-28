@@ -19,7 +19,7 @@
             <main>
                 <h2>Welcome to Anime Quotes</h2>
                 <h1>Check Out Popular <span>Quotes</span> from Anime</h1>
-                <button>Quote</button>
+                <button onclick="fetchData()">Quote</button> 
             </main>
 
 
@@ -28,7 +28,9 @@
         <!-- Right container has the card with the anime quote-->
         <div id="right_container">
             <div class="card">
-                <p>quote</p>
+                <p id="show"></p>
+                <p id="quote"></p>
+                <p id="speaker"></p>
             </div>
         </div>
 

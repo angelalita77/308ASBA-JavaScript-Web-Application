@@ -9,7 +9,7 @@ const p = document.getElementById('quote');
 const speaker = document.getElementById('speaker');
 const show = document.getElementById('show')
 
-window.fetchQuote = fetchQuote;
+window.fetchData = fetchData;
 
 
 // fetch(url)
@@ -18,7 +18,7 @@ window.fetchQuote = fetchQuote;
 //     .catch(error => console.error(error));
 
 
-async function fetchQuote() {
+async function fetchData() {
     
     try {
         const response = await fetch(randomUrl);
@@ -26,9 +26,12 @@ async function fetchQuote() {
             throw new Error(`Bruh! \nHTTP error! status: ${response.status}`)
         }
         const data = await response.json();
-        p.innerHTML = data[0].quote;
-        speaker.innerHTML = "-" + data[0].character;
-        show.innerHTML = data[0].show;
+
+        // Since it's random, fetch the quote from the first obj in array
+        show.innerHTML = data[0].show; // anime title
+        p.innerHTML = `"` + data[0].quote + `"`; // quote
+        speaker.innerHTML = "-" + data[0].character; //quote speaker
+        
         console.log(`Data received:`, data[0].quote)
         
         
@@ -36,6 +39,7 @@ async function fetchQuote() {
         console.error('Error fetching data:', error);
     }
 }
+
 
 
 
