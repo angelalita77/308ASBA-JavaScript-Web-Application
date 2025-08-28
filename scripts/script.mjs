@@ -1,9 +1,10 @@
-import { fromChar, dayQuote, dailyMessage } from "./urls.mjs";
+//import { fromChar, dayQuote, dailyMessage } from "./urls.mjs";
 
 
 //const url = "https://api.animechan.io/v1/quotes/random"
 const url = "https://yurippe.vercel.app/api/quotes"
 const randomUrl = "https://yurippe.vercel.app/api/quotes?random=1"
+const charUrl = "https://api.jikan.moe/v4/characters/"
 const p = document.getElementById('quote');
 const speaker = document.getElementById('speaker');
 const show = document.getElementById('show')
@@ -35,6 +36,8 @@ async function fetchQuote() {
         console.error('Error fetching data:', error);
     }
 }
+
+
 
 
 

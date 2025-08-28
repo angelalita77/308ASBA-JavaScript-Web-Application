@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type = "module" defer src="./scripts/script.mjs"></script>
+    <script type="module" defer src="./scripts/script.mjs"></script>
     <script type="module" defer src="./scripts/urls.mjs"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    <button onclick="fetchQuote()">Quote</button>
-    <h3 id="show"></h3>
-    <p id="quote"></p>
-    <p id="speaker"></p>
-    
-    
+    <div class="container">
+        <!-- Left container has the header, title, and quote button-->
+        <div id="left_container">
+            <header>Anime Quotes</header>
+            <img src="./images/character reading white background.png" alt="character reading book">
+            <main>
+                <h2>Welcome to Anime Quotes</h2>
+                <h1>Check Out Popular <span>Quotes</span> from Anime</h1>
+                <button>Quote</button>
+            </main>
+
+
+        </div>
+
+        <!-- Right container has the card with the anime quote-->
+        <div id="right_container">
+            <div class="card">
+                <p>quote</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
 </body>
+
 </html>
