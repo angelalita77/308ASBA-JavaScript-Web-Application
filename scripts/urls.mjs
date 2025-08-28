@@ -1,12 +1,7 @@
-const dayQuote = "Quote of the Day";
-
-const fromChar = "Spike Spigel";
-
-export function dailyMessage(){
-   console.log(`${dayQuote} is from ${fromChar}`);
-}
+const randomUrl = "https://yurippe.vercel.app/api/quotes?random=1"
+const charUrl = "https://api.jikan.moe/v4/characters/"
 
 export {
-    dayQuote,
-    fromChar
+    randomUrl,
+    charUrl
 }

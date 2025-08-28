@@ -1,0 +1,1 @@
+// To place the functions for fetching data from Jikan.moe API

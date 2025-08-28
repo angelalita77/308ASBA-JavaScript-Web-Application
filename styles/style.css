@@ -79,13 +79,12 @@ img{
 .card {
     background-color:#b6aea2;
     width: 700px;
-    height: 900px;
+    min-height: 900px;
     border: #3b2c2f 5px solid;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     overflow: hidden; /* keeps image + text inside the rounded corners */
-    padding: 0px 20px
-    
+    padding: 0px 20px;
 }
 
 #show{
