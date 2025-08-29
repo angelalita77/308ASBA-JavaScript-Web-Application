@@ -24,8 +24,14 @@ header, main, h2, h1, img {
     margin: 10px;
 }
 
+header{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0;
+}
+
 main {
-    margin-top:100px;
+    margin-top:50px;
 }
 h2{
     margin: 0;
@@ -38,10 +44,12 @@ h1{
     font-size: 4.5em;
     
 }
-header{
-    font-size: 20px;
-    font-weight: bolder;
+
+#summary{
+    color:#7b7b7b;
+    max-width: 645px;
 }
+
 
 button{
     margin-top: 50px;
@@ -56,6 +64,7 @@ button{
     display:flex;
     
 }
+
 #left_container {
     background-color: #fcfbf5;
     flex: 5;
@@ -65,7 +74,7 @@ button{
 
 img{
     padding: 0;
-    width: 300px;
+    width: 400px;
 }
 
 #right_container{
@@ -76,6 +85,7 @@ img{
     align-items: center;
 }
 
+/* This is where the random quotes will appear */
 .card {
     background-color:#b6aea2;
     width: 700px;
@@ -88,6 +98,7 @@ img{
     overflow: auto;
 }
 
+/*-------- quote sections ----------------*/
 #show{
     font-size: 4em;
     font-weight: bold;
@@ -100,3 +111,4 @@ img{
 #speaker{
     font-size: 1.5em;
 }
+/*-----------------------------------------*/
