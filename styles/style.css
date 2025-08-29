@@ -52,7 +52,7 @@ button{
     gap: 20px;
     height: 100%;
     width: 100%;
-    border: #e9320d 2px solid;
+   /* border: #e9320d 2px solid;*/
     display:flex;
     
 }
@@ -79,7 +79,7 @@ img{
 .card {
     background-color:#b6aea2;
     width: 700px;
-    height: 900px;
+    height: 875px;
     border: #3b2c2f 5px solid;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
@@ -89,7 +89,7 @@ img{
 }
 
 #show{
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bold;
 }
 

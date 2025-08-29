@@ -21,7 +21,8 @@ async function fetchData() {
         }
         // fetch data and convert to obj array
         const data = await response.json();
-        fetchImage(data);
+        console.log(data);
+        //fetchImage(data);
         // Since it's random, fetch the quote from the first obj in array
         show.innerHTML = data[0].show; // anime title
         p.innerHTML = `"` + data[0].quote + `"`; // quote
@@ -35,24 +36,21 @@ async function fetchData() {
     }
 }
 
-// Get image from API stored in charURL imported from ./urls.mjs
-// Testing before placing in module file ./helperfuncs.mjs
-async function fetchImage(quoteData) {
 
-    try {
-        const response = await fetch(charUrl);
-        if (!response.ok) {
-            throw new Error(`Bruh! Not Agin! \nHTTP error! status: ${response.status}`)
-        }
-        const data = await response.json();
-        // if data.anime.title == data.title 
-        // then return value of image src of that anime
 
-        
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        
-    }
+//------------------------- Ideas of Helper Functions to be Imported ----------------------/
+
+
+// Create a function to ensure the quote displayed is not explicit.
+// If the quote is explicit, then the function will be called again
+// to pull another random quote
+// Argument: data[0].quote which stores the quote object value (string) 
+// Return: Boolean
+function safeQuote(data){
+    /* retrive string of quote
+    check string for explicit words
+    return TRUE if safe
+    else call fetchData*/
 
 }
 
@@ -60,10 +58,26 @@ async function fetchImage(quoteData) {
 
 
 
+// // Retrieve image of the speaker of the quote 
+// // Get image from API stored in charURL imported from ./urls.mjs
+// // Testing before placing in module file ./helperfuncs.mjs
+// async function fetchImage(quoteData) {
 
+//     try {
+//         const response = await fetch("https://api.jikan.moe/v4/characters/1/full");
+//         if (!response.ok) {
+//             throw new Error(`Bruh! Not Agin! \nHTTP error! status: ${response.status}`)
+//         }
+//         const data = await response.json();
+//         console.log(data);
+//         // if quoteData.character == data.character
+//         // then return value of image src of that anime
 
+        
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+        
+//     }
 
-
-
-
+// }
 
