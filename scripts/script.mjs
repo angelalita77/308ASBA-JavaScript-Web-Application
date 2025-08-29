@@ -21,7 +21,7 @@ async function fetchData() {
         }
         // fetch data and convert to obj array
         const data = await response.json();
-        console.log(data);
+        safeQuote(data[0].quote);
         //fetchImage(data);
         // Since it's random, fetch the quote from the first obj in array
         show.innerHTML = data[0].show; // anime title
@@ -46,13 +46,39 @@ async function fetchData() {
 // to pull another random quote
 // Argument: data[0].quote which stores the quote object value (string) 
 // Return: Boolean
-function safeQuote(data){
+function safeQuote(){
+    // test variable with array of regular then forbidden words 
+    // test with a hard coded string "The cat has a big smile"
+    const forbidden = ["cat","house","dog"];
+    const testQuote = "The cat has a big smile";
+    const lowercaseQuote = testQuote.toLowerCase()
+    const quoteArray = lowercaseQuote.split(` `);
+    console.log(lowercaseQuote);
+    console.log(quoteArray)
+
+    for (let word of quoteArray){
+        console.log(word)
+        for(let i = 0; i < forbidden.length -1; i++){
+            console.log(forbidden[i])
+            if (forbidden[i] !== word){
+                continue;
+            }
+            else{
+                 console.log("Not Allowed")
+                 return false;
+            }
+
+        }
+
+    }
     /* retrive string of quote
     check string for explicit words
     return TRUE if safe
     else call fetchData*/
-
+    return true;
 }
+
+
 
 
 
