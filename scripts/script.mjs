@@ -21,7 +21,10 @@ async function fetchData() {
         }
         // fetch data and convert to obj array
         const data = await response.json();
-        safeQuote(data[0].quote);
+        if (safeQuote(data[0].quote)) {
+ 
+        
+        
         //fetchImage(data);
         // Since it's random, fetch the quote from the first obj in array
         show.innerHTML = data[0].show; // anime title
@@ -29,11 +32,15 @@ async function fetchData() {
         speaker.innerHTML = "-" + data[0].character; //quote speaker
         
         console.log(`Data received:`, data[0].quote)
-        
+        }
+        else {
+            fetchData();
+        }
         
     } catch (error) {
         console.error('Error fetching data:', error);
     }
+
 }
 
 
@@ -47,14 +54,12 @@ async function fetchData() {
 // Argument: data[0].quote which stores the quote object value (string) 
 // Return: Boolean
 function safeQuote(quote){
-    // test variable with array of regular then forbidden words 
-    // test with a hard coded string "The cat has a big smile"
-    const forbidden = ["cat","house","dog"];
-    //const testQuote = "The cat has a big smile";
+    // test variable with array of regular and forbidden words 
+    const forbidden = ["house","cat","will", "ass", "your"];
     const lowercaseQuote = quote.toLowerCase()
     const quoteArray = lowercaseQuote.split(` `);
     console.log(lowercaseQuote);
-    console.log(quoteArray)
+    console.log(quoteArray);
 
     for (let word of quoteArray){
         console.log(word)
@@ -64,7 +69,8 @@ function safeQuote(quote){
                 continue;
             }
             else{
-                 console.log("Not Allowed")
+                 console.log("Not Allowed: " + quote)
+                 console.log("Forbidden word: " + word)
                  return false;
             }
 
