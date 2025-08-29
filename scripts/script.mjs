@@ -46,19 +46,19 @@ async function fetchData() {
 // to pull another random quote
 // Argument: data[0].quote which stores the quote object value (string) 
 // Return: Boolean
-function safeQuote(){
+function safeQuote(quote){
     // test variable with array of regular then forbidden words 
     // test with a hard coded string "The cat has a big smile"
     const forbidden = ["cat","house","dog"];
-    const testQuote = "The cat has a big smile";
-    const lowercaseQuote = testQuote.toLowerCase()
+    //const testQuote = "The cat has a big smile";
+    const lowercaseQuote = quote.toLowerCase()
     const quoteArray = lowercaseQuote.split(` `);
     console.log(lowercaseQuote);
     console.log(quoteArray)
 
     for (let word of quoteArray){
         console.log(word)
-        for(let i = 0; i < forbidden.length -1; i++){
+        for(let i = 0; i < forbidden.length; i++){
             console.log(forbidden[i])
             if (forbidden[i] !== word){
                 continue;
