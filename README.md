@@ -1,6 +1,6 @@
-# SBA 308A:  JavaScript Web Application
+# SBA 308A: JavaScript Web Application
 
-### Introduction
+### Assignment Introduction
 This assessment measures your capability to implement advanced JavaScript tools and features in a practical manner. You have creative freedom in the topic, material, and purpose of the web application you will be developing, so have fun with it! However, remember to plan the scope of your project to the timeline you have been given.
 
 ### Objectives
