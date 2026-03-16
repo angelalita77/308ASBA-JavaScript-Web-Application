@@ -1,5 +1,18 @@
 # SBA 308A: JavaScript Web Application
 
+
+# 🎌 Anime Quotes
+ 
+> A simple web application that displays random quotes from anime characters at the click of a button.
+ 
+---
+ 
+## 📸 Screenshot
+ 
+<img src="images/screenshots/AnimeQuote_Screenshot.jpg" width=600>
+ 
+---
+
 ### Assignment:
 ### Introduction
 This assessment measures your capability to implement advanced JavaScript tools and features in a practical manner. You have creative freedom in the topic, material, and purpose of the web application you will be developing, so have fun with it! However, remember to plan the scope of your project to the timeline you have been given.
@@ -12,12 +25,6 @@ This assessment measures your capability to implement advanced JavaScript tools 
 - Organize files using modules and imports.
 
 
-### Website: Anime Quotes
-### Purpose
-It will display different quotes from characters in anime when clicking on the [Quote] button
-
-## Screenshot:
-<img src="images/screenshots/AnimeQuote_Screenshot.jpg" width=600>
 
 ### Build With:
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
