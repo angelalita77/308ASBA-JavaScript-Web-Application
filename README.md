@@ -12,17 +12,22 @@
 <img src="images/screenshots/AnimeQuote_Screenshot.jpg" width=600>
  
 ---
+## 📖 About The Project
+ 
+**Anime Quotes** is a frontend web app that fetches random quotes from anime characters using a public API. Each time you click the **Quote** button, a new quote is retrieved, filtered for appropriate content, and displayed on a styled card — showing the anime title, the quote itself, and the character who said it.
+ 
+This project was built as part of **SBA 308A: JavaScript Web Application** to demonstrate practical use of asynchronous JavaScript, the Fetch API, ES Modules, and event-driven programming.
+ 
+---
+ 
+## ✨ Features
+ 
+- 🎲 Fetches a random anime quote on button click
+- 🚫 Filters out quotes containing explicit language before displaying
+- 📦 Organized using ES Modules (`import`/`export`)
+- ⚡ Fully asynchronous using `async/await` and the Fetch API
 
-### Assignment:
-### Introduction
-This assessment measures your capability to implement advanced JavaScript tools and features in a practical manner. You have creative freedom in the topic, material, and purpose of the web application you will be developing, so have fun with it! However, remember to plan the scope of your project to the timeline you have been given.
-
-### Objectives
-- Use asynchronous JavaScript tools to build a responsive web application.
-- Demonstrate understanding of the JavaScript event loop.
-- Generate asynchronous code using Promises and async/await syntax.
-- Use fetch and/or Axios to interact with an external web API.
-- Organize files using modules and imports.
+---
 
 
 
