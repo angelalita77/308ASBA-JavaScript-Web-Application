@@ -74,6 +74,21 @@ project-root/
 - Event-driven UI with DOM manipulation
  
 ---
+## 🚀 Getting Started
+ 
+No build tools or dependencies required — just open the project in a browser.
+ 
+1. Clone or download this repository.
+2. Open `index.html` directly in your browser, **or** serve it with a local development server (recommended for ES Module support):
+ 
+   ```bash
+   # Using VS Code Live Server, or:
+   npx serve .
+   ```
+ 
+> **Note:** ES Modules (`type="module"`) require a server context. Opening `index.html` via `file://` may block module imports in some browsers.
+ 
+---
 
 ## 🔮 Future Improvements
  
