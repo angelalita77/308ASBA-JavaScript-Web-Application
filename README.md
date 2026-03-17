@@ -31,11 +31,42 @@ This project was built as part of **SBA 308A: JavaScript Web Application** to de
 
 
 
-### Build With:
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
+## 🛠️ Built With
+ 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
+ 
+- **HTML5** — semantic page structure
+- **CSS3** — custom styling and layout via Flexbox
+- **JavaScript (ES Modules)** — async/await, Fetch API, modular file structure
 
+ 
+---
+## 📁 Project Structure
+ 
+```
+project-root/
+├── index.html
+├── styles/
+│   └── style.css
+├── scripts/
+│   ├── script.mjs        # Main logic: event listener + fetchData()
+│   ├── urls.mjs          # API endpoint constants
+│   └── helperfuncs.mjs   # safeQuote() content filter
+└── images/
+    └── screenshots/
+        └── AnimeQuote_Screenshot.jpg
+```
+ 
+---
+
+## 🌐 APIs Used
+ 
+| API | Purpose | Docs |
+|-----|---------|------|
+| [Yurippe Anime Quotes](https://yurippe.vercel.app/) | Fetches random anime quotes | `GET /api/quotes?random=1` |
+| [*Jikan API](https://jikan.moe/) | MyAnimeList unofficial API (staged for future use - character images) | `GET /v4/characters/{id}/full` |
+ 
+---
 
 ### Acknowledgements
 <!-- MARKDOWN LINKS & IMAGES -->
